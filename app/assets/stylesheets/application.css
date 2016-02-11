@@ -21,3 +21,8 @@
 .border-image{
 	border: solid 5px rgb(5, 126, 98);
 }
+
+#history{
+	background-color:rgb(245,167,99);
+	height: 500px;
+}
