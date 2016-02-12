@@ -14,10 +14,19 @@
  *= require_self
  */
 .logo{
-	margin-left: 50px; 
-	margin-top: 15px;
-	width: 120px;
+	margin-left: 50px;
+
 }
 .border-image{
 	border: solid 5px rgb(5, 126, 98);
+}
+#history{
+	background-image: url(/assets/cerro.jpg);
+	background-repeat: no-repeat;
+}
+
+#banner{
+	background-image: url(/assets/sponsor/cocacola.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
