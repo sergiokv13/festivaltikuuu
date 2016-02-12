@@ -20,6 +20,7 @@
 .border-image{
 	border: solid 5px rgb(5, 126, 98);
 }
+<<<<<<< HEAD
 #history{
 	background-image: url(/assets/cerro.jpg);
 	background-repeat: no-repeat;
@@ -29,4 +30,10 @@
 	background-image: url(/assets/sponsor/cocacola.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+=======
+
+#history{
+	background-color:rgb(245,167,99);
+	height: 500px;
+>>>>>>> 5b0f884644c76631f433d81c5e9291df5f820163
 }
