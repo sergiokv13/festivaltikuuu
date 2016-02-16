@@ -1,5 +1,6 @@
 class MainController < ApplicationController
   def index
-    #code
+    @history = History.last
+    @photos = Photo.all
   end
 end
