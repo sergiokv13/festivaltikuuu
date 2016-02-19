@@ -194,8 +194,8 @@
 		<div class="col-lg-11">
 				<h2 class="heading">Fotos</h2>
 		</div>
-	</div>	
-	
+	</div>
+
 		<div class="row">
 
 			<div class="col-sm-6">
@@ -212,7 +212,11 @@
 <div class="carousel-inner" role="listbox">
 
   <div class="item active">
-    <%= image_tag Photo.last.photo.url(:small),:style=>"height:300px;width:520px;"%>
+    <% if Photo.last != nil %>
+      <%= image_tag Photo.last.photo.url(:small),:style=>"height:300px;width:520px;"%>
+    <% else %>
+      <img src="/assets/imagen1.jpg" />
+    <% end %>
   </div>
 
   <%@photos.each do |photo|%>
@@ -220,7 +224,7 @@
   	<%= image_tag photo.photo.url(:small),:style=>"height:300px;width:520px;"%>
   </div>
   <%end%>
-  
+
 </div>
 
 <!-- Left and right controls -->
@@ -303,7 +307,7 @@
 	      <p style="color:black;margin-top:10px;">
 	        <%=@history.content.gsub(/\n/,"<br>").html_safe%>
 	      </p>
-	     </div> 
+	     </div>
 	    </div>
     </div>
      	<div class="modal-footer pull-left" style="color:black;">Fuentes: <%=@history.fuentes%></div>
